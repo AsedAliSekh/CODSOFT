@@ -1,10 +1,163 @@
-/* img{
-    border: 2px solid black;
-    
-    height: 90vh;
-    width: 100%
-} */
+/* Import google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Kanit&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+.uni-padding{
+    padding: 0px 80px;
+}
 
 body{
-    background-color: aqua;
+    background-image: linear-gradient( to right, #7becf1 , #004aad);
 }
+
+/* navber style  */
+.nav_bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    overflow: hidden;
+    
+  }
+  
+.nav_bar ul li{
+    float: right;
+  }
+.nav_bar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* code pen css for hover efect  */
+.nav_bar ul li a{
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+.nav_bar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.nav_bar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/* code pen css for hover efect  */
+
+#logo{
+    height: 160px;
+    width: 160px;
+    margin-top: -52px;
+}
+  
+/* Main nootbook landing section  */
+.nootbook{
+    display: block;
+    margin: auto;
+    height: 600px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+#read_btn{
+    /* background-color: #662d91;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px; */
+    height: 257px;
+    display: block;
+    margin: auto;
+    margin-top: -185px;
+}
+
+
+/* Search by section  */
+.srcBy h1{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+}
+.inSrc{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+/* Course University section */
+.srcItem{
+    margin: 0px 20px;
+    background: linear-gradient(to right,#fff0b1, #ffe682);
+    background-color: #fff0b1;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    padding: 20px 15px;
+    border: 0px solid #000;
+    border-radius: 23px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #2D2D2D;
+    cursor: pointer;
+   }
+
+  .srcItem:hover{
+    background: linear-gradient(to right,#fceaa1, #ffe374);
+   }
+  .srcItem:active{
+    transform: scale(0.95);
+   }
+
+   /* <!-- Select Your University section  --> */
+   .selectUni > h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+   }
+   .uniLogo{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    cursor: pointer;
+   }
+   .uniItem{
+    height: 220px;
+    width: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20%;
+   }
+   .uniItem>img{
+    height: 132px;
+    width: 132px;
+    display: block;
+    margin: auto;
+    padding: 17px;
+   }
+   .uniItem > h1{
+    text-align: center;
+    font-family: inherit;
+   }
