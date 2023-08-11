@@ -1,15 +1,18 @@
 /* ipad size responsive style  */
 @media screen and (max-width: 800px) {
-    .uni-padding{
+    .uni-padding {
         padding: 0px 50px;
     }
-    .nootbook{
+
+    .nootbook {
         height: fit-content;
     }
-    #read_btn{
+
+    #read_btn {
         height: 150px;
         margin-top: -110px;
     }
+
     .srcItem {
         width: 80%;
     }
@@ -44,16 +47,19 @@
 
 /* mobile screen responsive css  */
 @media screen and (max-width: 520px) {
-    .uni-padding{
+    .uni-padding {
         padding: 0px 20px;
     }
-    .nootbook{
+
+    .nootbook {
         height: fit-content;
     }
-    #read_btn{
+
+    #read_btn {
         height: 110px;
         margin-top: -80px;
     }
+
     .srcBy h1 {
         font-size: 40px;
     }
@@ -83,28 +89,35 @@
         height: 200px;
         width: 180px;
     }
-    .uniItem>img{
+
+    .uniItem>img {
         height: 120px;
         width: 120px;
     }
-    .semContainte{
+
+    .semContainte {
         grid-template-columns: auto;
         justify-content: center;
     }
-    .semBtn{
-       width: 70vw;
-    }
-    /* temp  */
-    .paperContainer{
-        grid-template-columns: auto;
-    }
-    .paperBtn{
+
+    .semBtn {
         width: 70vw;
     }
-    .yearContainer{
+
+    /* temp  */
+    .paperContainer {
         grid-template-columns: auto;
     }
-    .card{
+
+    .paperBtn {
+        width: 70vw;
+    }
+
+    .yearContainer {
+        grid-template-columns: auto;
+    }
+
+    .card {
         margin: 30px 0px;
     }
 
@@ -207,14 +220,22 @@
     .content .top .media-icons {
         margin-top: 16px;
     }
-    footer .content .link-boxes{
+
+    footer .content .link-boxes {
         width: 100%;
         display: grid;
         grid-template-columns: auto auto;
-        justify-content: space-evenly;
-      }
-    /* footer .content .link-boxes .box {
-        width: calc(100% / 2 - 20px);
-    } */
+        justify-content: space-around;
+    }
+
+    footer .bottom-details .bottom_text {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .bottom-details .bottom_text span {
+        padding: 10px;
+    }
+
 
 }
