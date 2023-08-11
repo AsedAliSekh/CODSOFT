@@ -114,6 +114,7 @@ body {
 
 /* Course University section */
 .srcItem {
+  width: 30vw;
   margin: 0px 20px;
   background: linear-gradient(to right, #fff0b1, #ffe682);
   background-color: #fff0b1;
@@ -368,12 +369,13 @@ footer .content .top{
 }
 footer .content .link-boxes{
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
 }
-footer .content .link-boxes .box{
+/* footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
-}
+} */
 .content .link-boxes .box .link_name{
   color: #fff;
   font-size: 18px;

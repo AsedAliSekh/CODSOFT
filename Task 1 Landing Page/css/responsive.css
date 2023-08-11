@@ -207,12 +207,14 @@
     .content .top .media-icons {
         margin-top: 16px;
     }
-
-    footer .content .link-boxes .box {
-        width: calc(100% / 2 - 10px);
-    }
-
-    footer .content .link-boxes .input-box {
+    footer .content .link-boxes{
         width: 100%;
-    }
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+      }
+    /* footer .content .link-boxes .box {
+        width: calc(100% / 2 - 20px);
+    } */
+
 }
