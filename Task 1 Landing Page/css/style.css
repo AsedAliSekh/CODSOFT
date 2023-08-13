@@ -14,41 +14,33 @@
 body {
   background-image: linear-gradient(to right, #7becf1, #004aad);
 }
-
-/* navber style  */
-.nav_bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 20px 0px 0px 0px;
-  overflow: hidden;
-
+/* new nav style  */
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
 }
-
-.nav_bar ul li {
+.nav_bar{
+  background-color: #2c3e5047;
+  margin-bottom: 25px;
+}
+nav ul {
   float: right;
 }
-
-.nav_bar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: 'Ubuntu', sans-serif;
+nav ul li {
+  list-style-type: none;
+  margin: 15px 0px;
+  float: left;
 }
-
-.nav_bar .icon {
-  /* Hide the link that should open and close the topnav on small screens */
-  display: none;
-}
-
-
-/*start css for hover efect  */
-.nav_bar ul li a {
+nav ul li a {
   display: inline-block;
   position: relative;
-
+  color: white;
+  font-size: 25px;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .nav_bar ul li a::after {
@@ -69,13 +61,23 @@ body {
   transform-origin: bottom left;
 }
 
-/*end css for hover efect  */
 
-#logo {
-  height: 160px;
-  width: 160px;
-  margin-top: -52px;
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
+
+#check {
+  display: none;
+}
+/* end nav style  */
+
 
 /* Main nootbook landing section  */
 .nootbook {
@@ -83,7 +85,7 @@ body {
   margin: auto;
   height: fit-content;
   width: 100%;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 #read_btn {

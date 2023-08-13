@@ -124,48 +124,62 @@
 }
 
 
+
 /* nav bar responsive  */
-@media screen and (max-width: 1000px) {
-    .nav_bar ul li a {
-        display: none;
+@media (max-width: 1200px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
     }
 
-    .nav_bar a.icon {
-        float: right;
-        display: block;
+    nav ul li a {
+        font-size: 16px;
     }
-
-    /* .responsive {
-        background-color: bisque;
-        border: 2px solid red;
-        display: block;
-        width: 100%;
-        height: 100vw;
-        z-index: 500;
-        position: relative;
-        float: right;
-    }
-
-    .responsive ul li a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .responsive ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 15px;
-        font-family: 'Ubuntu', sans-serif;
-        display: block;
-        text-align: right;
-    } */
 }
 
+@media (max-width: 1000px) {
+    .uni-padding {
+        padding: 0px 40px;
+    }
 
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e5047;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: grid;
+        align-content: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 25px 0;
+        line-height: 15px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
 
 
 
