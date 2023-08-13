@@ -125,11 +125,11 @@
 
 
 
-/* nav bar responsive  */
+/* nav bar responsive   */
+
 @media (max-width: 1200px) {
     label.logo {
         font-size: 30px;
-        padding-left: 50px;
     }
 
     nav ul li a {
@@ -146,12 +146,12 @@
         display: block;
     }
 
-    ul {
+    nav ul {
         z-index: 3;
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e5047;
+        background: #2c3e50;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -170,18 +170,19 @@
         font-size: 20px;
     }
 
-    a:hover,
-    a.active {
+    nav ul li a:hover,
+    nav ul li a.active {
         background: none;
         color: #0082e6;
     }
 
-    #check:checked~ul {
+    nav #check:checked~ul {
         left: 0;
+        
     }
 }
 
-
+ 
 
 
 
